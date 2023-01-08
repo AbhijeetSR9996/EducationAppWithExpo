@@ -1,8 +1,9 @@
-import { StyleSheet, Text, View, TouchableOpacity,Image,Linking } from 'react-native'
+import { StyleSheet, Text, View, TouchableOpacity, Image, Linking, ScrollView} from 'react-native'
 import React from 'react'
 
 const About = () => {
   return (
+  <ScrollView>
     <View style={styles.aboutContainer}>
      <Text style={styles.mainHeader}>Abhijeet Singh</Text>
      <Text style={styles.paraStyle}> I am a Frontend Developer 🙂 </Text>
@@ -28,10 +29,10 @@ const About = () => {
         Linking.openURL("https://www.github.com/AbhijeetSR9996")}>
         <Image style={styles.iconStyle} source={require('../../assets/github.png')} />
        </TouchableOpacity>
-       
       
       </View>
     </View>
+  </ScrollView>
   );
 };
 
