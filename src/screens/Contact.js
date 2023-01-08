@@ -1,4 +1,4 @@
-import { StyleSheet, Text, View,TextInput,TouchableOpacity,Alert } from 'react-native';
+import { StyleSheet, Text, View, TextInput, TouchableOpacity, Alert, ScrollView} from 'react-native';
 import React,{useState} from 'react';
 import Checkbox from 'expo-checkbox';
 import { useNavigation } from '@react-navigation/native';
@@ -21,6 +21,7 @@ const Contact = () => {
   };
 
   return (
+  <ScrollView>
     <View style={styles.mainContainer}> 
       <Text style={styles.mainHeader}> Level up your knowledge </Text>
       <Text style={styles.description}> You can reach us anytime via </Text>  
@@ -61,7 +62,7 @@ const Contact = () => {
        <Text style={styles.buttonText}> Contact Us </Text> 
       </TouchableOpacity>
     </View>
-
+  </ScrollView>
   );
 };
 
